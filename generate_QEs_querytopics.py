@@ -71,7 +71,7 @@ def do_this():
         qe_str = '%s\t%s\n' % (q,'\t'.join([qterms for qterms in qtermlist]))
         print 'Record: ', qe_str
         write_to_file(qe_str,output_file) 
-        
+    print "SE query file written to: %s" % output_file
     return
 
 do_this()

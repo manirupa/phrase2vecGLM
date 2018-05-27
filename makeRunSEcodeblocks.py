@@ -25,10 +25,9 @@ st = datetime.datetime.fromtimestamp(ts).strftime('%Y%m%d_%H-%M-%S')
 # header = 'Topic_ID    MeSH_terms    SUM_FULL_TEXT    SUM_UMLS    QueryID    interpolated_tfidf_G0.5L0.2uA0.3B0.2pA0.4B0.2_ql5    interpolated_tfidf_G0.5L0.2uA0.3B0.2pA0.4B0.2_ql4    interpolated_G0.5L0.2uA0.3B0.2pA0.4B0.2_ql5    interpolated_tfidf_G0.5L0.2uA0.3B0.2pA0.4B0.2_ql3    interpolated_G0.5L0.2uA0.3B0.2pA0.4B0.2_ql4    interpolated_G0.5L0.2uA0.3B0.2pA0.4B0.2_ql3'
 # header = 'QueryID    querytopics_phr_DESC_UMLS_paramsL0.2_A0.3_B0.2    querytopics_phr_SUM_UMLS_paramsL0.2_A0.3_B0.2    querytopics_phr_DESC_UMLS_paramsL0.2_A0.2_B0.4    querytopics_phr_NOTES_UMLS_paramsL0.2_A0.3_B0.2    querytopics_phr_SUM_UMLS_paramsL0.2_A0.2_B0.4    querytopics_phr_NOTES_UMLS_paramsL0.2_A0.2_B0.4    SUM_FULL_TEXT    DESC_UMLS    SUM_UMLS    NOTE_UMLS    Topic_ID    ExpertTerms'
 # header = 'Topic_ID    MeSH_terms    SUM_FULL_TEXT    QueryID    phrase437_3ql_tfidf_vs50_cw4_L0.5_A0.0_B0.0_G0.5    phrase437_3ql_tfidf_vs50_cw4_L0.0_A0.5_B0.5_G0.0    phrase437_3ql_vs50_cw4_L0.5_A0.0_B0.0_G0.5    phrase437_3ql_vs50_cw4_L0.0_A0.5_B0.5_G0.0    phrase437_3ql_phrase2vec    SUM_UMLS'
-# header = 'Topic_ID    MeSH_terms    SUM_FULL_TEXT    QueryID    querytopics_vs50_cw4_phrase2vec_SUM_UMLS_Direct    querytopics_vs50_cw4_phrase2vec_SummaryTextDirect    querytopics_vs50_cw4_L0.5_A0.0_B0.0_G0.5_SUM_UMLS_Direct    querytopics_vs50_cw4_L0.5_A0.0_B0.0_G0.5_SummaryText_Direct'
 
 #ADD A NEW HEADER FROM QUERY FILE HERE, MOVE THIS ABOVE
-header = 'Topic_ID    MeSH_terms    SUM_FULL_TEXT    QueryID    querytopics_phr_DESC_UMLS_paramsL0.2_A0.3_B0.2    querytopics_phr_SUM_TEXT_paramsL0.2_A0.4_B0.2    querytopics_phr_SUM_UMLS_paramsL0.2_A0.3_B0.2    querytopics_phr_DESC_UMLS_paramsL0.2_A0.2_B0.4    querytopics_phr_NOTES_UMLS_paramsL0.2_A0.3_B0.2    querytopics_phr_SUM_UMLS_paramsL0.2_A0.2_B0.4    querytopics_phr_NOTES_UMLS_paramsL0.2_A0.2_B0.4    querytopics_phr_SUM_TEXT_paramsL0.2_A0.3_B0.2    querytopics_phr_SUM_TEXT_paramsL0.2_A0.2_B0.4'
+header = 'Topic_ID    MeSH_terms    SUM_FULL_TEXT    QueryID    querytopics_vs50_cw4_phrase2vec_SUM_UMLS_Direct    querytopics_vs50_cw4_phrase2vec_SummaryTextDirect    querytopics_vs50_cw4_L0.5_A0.0_B0.0_G0.5_SUM_UMLS_Direct    querytopics_vs50_cw4_L0.5_A0.0_B0.0_G0.5_SummaryText_Direct'
 
 keys = header.split()
 
@@ -41,7 +40,7 @@ print '%s\n' % str([(i,keys[i]) for i in range(len(keys))])
 # script_name = 'Search_vs50_phrases437_L0.5A0.0B0.0G0.5_2ndlevel.js'
 
 #ADD A NEW SCRIPT NAME HERE, MOVE THIS ABOVE
-script_name = 'Search_phr_DIRECT_UMLS_wSUMTEXT.js'
+script_name = 'Search_vs50_phrases437_L0.5A0.0B0.0G0.5_phrase2Vec_Direct.js'
 
 block = '''
             //REPLACE            FIELD

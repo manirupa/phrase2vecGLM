@@ -393,6 +393,45 @@ def do_this():
     
     return
 
+def phrase2vec_concepts(query_docid,query,scores_list,model,ordered_vocab,newdoctermsfreqs):
+    #print "scores_list: ", scores_list
+    matching_doc_ids = [item[0] for item in scores_list]
+    #print "matching_doc_ids: ", matching_doc_ids
+    best_matches = {}
+    stoplist = stop + query
+    topterms = []
+    for q in query:
+        topsimscores = []
+        for md in matching_doc_ids:
+            #print "processing query term: %s for document: %s " % (q,md)
+            doctermsrec = newdoctermsfreqs[md]#[2]
+            doctermsinds = [int(item[0]) for item in doctermsrec] #all the term indices in this matching doc
+            docterms = [ordered_vocab[t_ind] for t_ind in doctermsinds]
+            #add MAX similarity value of that query term with all terms in document to simscore list
+            simslist = [(float(model.similarity(q,term)),term,md) for term in docterms if term not in stoplist]
+            simslist.sort(key=operator.itemgetter(0), reverse=True)
+            #print 'simslist', simslist
+            highest = simslist[0]
+            #print 'highest:' , highest
+            hterm = highest[1] #just the term 
+            if hterm not in topterms: #if block to avoid duplicates
+                topterms.append(hterm)
+                topsimscores.append(highest)
+            else:
+                try:
+                    highest = simslist[1]
+                    hterm = highest[1]
+                    topterms.append(hterm)
+                    topsimscores.append(highest)
+                except:
+                    topterms.append(hterm)
+                    topsimscores.append(highest)
+        topsimscores.sort(key=operator.itemgetter(0), reverse=True)
+        qmatch_highest = topsimscores[0] #[topsimscores[0],topsimscores[1]]
+        best_matches[q] = qmatch_highest
+    print query, best_matches
+    return best_matches
+
 def word2vec_concepts(query_docid,query,scores_list,model,ordered_vocab,newdoctermsfreqs):
     #print "scores_list: ", scores_list
     matching_doc_ids = [item[0] for item in scores_list]

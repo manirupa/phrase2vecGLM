@@ -90,6 +90,7 @@ def do_this():
         qe_str = '%s\t%s\n' % (qid,'\t'.join([x['terms'] for x in qe_terms[qid].values()]))
         print 'Record: ', qe_str
         write_to_file(qe_str,output_file) 
+    print "Written to SE query output file: %s " % output_file
         
     return
 
