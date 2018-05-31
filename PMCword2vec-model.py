@@ -4,9 +4,6 @@
 @author: Manirupa Das
 This script normalizes data, and given experimental settings, performs 
 word2vec training on sets of documents
-
-TO-DO: Additionally find the top-K, word similarities
-for this training
 """
 import time
 import operator
