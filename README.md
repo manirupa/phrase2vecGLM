@@ -1,6 +1,8 @@
 ## Phrase2VecGLM
 
-#### A neural phrasal embedding-based generalized language model for semantic tagging for complex query reformulation. Details about the model can be found in this paper: https://t.co/wTIp3Nye7E
+#### A neural phrasal embedding-based generalized language model for semantic tagging for complex query reformulation. 
+
+#### Details about the model can be found in this paper: https://t.co/wTIp3Nye7E
 
 ##### Overall Process: _(refinement currently in progress..)_
 
