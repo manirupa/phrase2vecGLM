@@ -13,7 +13,8 @@ a) corpus processing to generate document and collection-level statistics,
 b) model building and inference (semantic tagging of queries or query documents) and 
 c) evaluation via query preparation for and run on ES 
 
-_a) Corpus processing for document/collection statistics_ (Order is important.)
+_a) Corpus processing for document/collection statistics_ (Order is important.):
+
 0) Run make_phrases.py --- (Phrase-tokenize input text file and regenerate phrase-based input first, to learn phrasal word2vec next)
 1) Run PMCword2vec-model.py --- (Obtain model; make vocab.txt in model folder by cut command to get first column of text-based model file)
 usage: `./PMCword2vec-model.py <input_text_file> <experimental_setting_list format_file> <description_text>`
