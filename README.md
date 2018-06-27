@@ -14,7 +14,7 @@ c) evaluation via query preparation for and run on ES
 _a) Corpus processing for document/collection statistics_ (Order is important.)
 0) Run make_phrases.py --- (Phrase-tokenize input text file and regenerate phrase-based input first, to learn phrasal word2vec next)
 1) Run PMCword2vec-model.py --- (Obtain model; make vocab.txt in model folder by cut command to get first column of text-based model file)
-usage: `./PMCword2vec-model.py <input_text_file> <experimental_setting_`list format`_file> <description_text>`
+usage: `./PMCword2vec-model.py <input_text_file> <experimental_setting_list format_file> <description_text>`
 2) Run PMCtfidf-model.py  --- (Needs vocab.txt from previous step. Generates indexed_vocab.txt.)
 usage: `./PMCtfidf-model.py <prefix> (model folder) <input_text_file> <vocabfile> (full path to vocab.txt) <description_text (for unique run)> <topN>`
 3) Run PMCsimttp-model.py --- (Needs indexed_vocab.txt from previous step)
