@@ -2,7 +2,7 @@
 
 #### A neural phrasal embedding-based generalized language model for semantic tagging for complex query reformulation. 
 
-#### Details about the model can be found in this paper: https://t.co/wTIp3Nye7E
+#### Details about the model can be found in this paper: http://www.aclweb.org/anthology/W18-2313
 
 ##### Overall Process: _(refinement currently in progress..)_
 
