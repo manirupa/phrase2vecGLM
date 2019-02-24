@@ -1,0 +1,30 @@
+1	melena recent CABG
+2	arthroplasty "hip fracture"
+3	Urosepsis
+4	falls "cervical fracture"
+5	colon cancer metastasis lung COPD symptoms
+6	management bleeding peptic ulcer "hypovolemic shock"
+7	cirrhosis ulcer pancreatitis liver failure
+8	miscarriage sepsis
+9	neonatal sepsis preterm
+10	hepatic encephalopathy diagnosis
+11	recurrent angina test
+12	MVA scan
+13	sepsis delirium test
+14	varicella zoster pneumonia lab
+15	lung cancer bronchoscopy pathology lab
+16	acute stroke scan
+17	diastolic CHF anemia lab imaging
+18	methadone withdrawal scale
+19	elderly delirium assessment
+20	acute cholecystitis common bile duct stone lab
+21	allogeneic SCT pneumonia treatment
+22	"cardiac arrest" management
+23	colon cancer melena diverticulosis treatment
+24	small bowel obstruction after ileostomy diarrhea treatment
+25	large cell carcinoma afib management
+26	management of arrhythmias prolonged QT
+27	acute subdural hematoma herniation management elderly
+28	upper GI bleed myocardial ischemia management
+29	exacerbation of IPF treatment
+30	acute orthostatic hypotension treatment
