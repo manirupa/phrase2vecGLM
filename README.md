@@ -4,7 +4,7 @@
 
 #### Details about the model can be found in this paper: http://www.aclweb.org/anthology/W18-2313
 
-##### Overall Process: _(refinement currently in progress..)_
+### Overall Process: _(still in progress..)_
 
 Step 0: Set up ElasticSearch (ES) index (needed for evaluation of GLM) on PMC article dataset provided here: http://www.trec-cds.org/2016.html\#documents
 
